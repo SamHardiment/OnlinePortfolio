@@ -1,0 +1,75 @@
+:root {
+  --lightPink: rgb(255, 203, 203);
+  --darkPink: rgb(255, 181, 181);
+  --greyBlue: rgb(64, 112, 136);
+  --darkBlue: rgb(19, 39, 67);
+  --darkBlue-Variant: rgba(19, 39, 67, 0.8);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.navbar {
+  /* background-color: var(--greyBlue); */
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem;
+}
+
+.heading--3 {
+  color: var(--darkPink);
+  font-family: "Water Brush", cursive;
+  font-size: 3rem;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0.1rem;
+  margin-left: 1.8rem;
+}
+.heading--3 > span {
+  font-size: 4.2rem;
+}
+
+.navigation {
+  margin-right: 1.8rem;
+  align-self: auto;
+  display: flex;
+  width: 35vw;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.navigation > li > a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.8rem;
+  font-family: "Overpass", sans-serif;
+  transition: all 0.3s;
+}
+.navigation > li > a:hover {
+  cursor: pointer;
+  color: var(--lightPink);
+  text-decoration: underline var(--lightPink);
+  text-underline-offset: 2px;
+}
+.navigation > li:hover {
+  transform: translateY(-2px);
+}
+header {
+  height: 85vh;
+  background-image: linear-gradient(
+      var(--darkBlue-Variant),
+      var(--darkBlue-Variant)
+    ),
+    url(https://wallpapercave.com/wp/wp4511397.jpg);
+  background-color: var(--darkBlue-Variant);
+  background-size: cover;
+  position: relative;
+}
