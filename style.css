@@ -227,8 +227,21 @@ main {
     margin-top: 20rem;
   }
 }
-
+.skills-carousel {
+  position: relative;
+}
 .slide > img {
   width: 200px;
   height: 200px;
+}
+
+.carousel-slides {
+  margin: 0 auto;
+  display: flex;
+  width: 200px;
+  height: 250px;
+  overflow: hidden;
+}
+.carousel-slide {
+  flex: 0 0 100%;
 }
