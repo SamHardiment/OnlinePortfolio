@@ -227,3 +227,8 @@ main {
     margin-top: 20rem;
   }
 }
+
+.slide > img {
+  width: 200px;
+  height: 200px;
+}
