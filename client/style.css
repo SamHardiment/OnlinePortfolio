@@ -75,10 +75,19 @@ header {
   background-color: var(--darkBlue-Variant);
   background-size: cover;
   position: relative;
-  clip-path: polygon(100% 0, 100% 80%, 80% 100%, 20% 100%, 0 80%, 0 0);
+  clip-path: polygon(100% 0, 100% 85%, 0 100%, 0 0);
   margin-bottom: 10rem;
 }
-
+.sectionDivider-1 {
+  background-color: var(--greyBlue);
+  height: 25rem;
+  clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
+}
+.sectionDivider-2 {
+  background-color: var(--darkBlue-Variant);
+  height: 25rem;
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+}
 .heroText {
   text-align: center;
   position: absolute;
@@ -122,9 +131,10 @@ header {
   animation-duration: 1.6s;
   opacity: 0.95;
 }
-main {
+.margin-5 {
   margin: 5rem;
 }
+
 .heading--4 {
   font-family: inherit;
   font-size: 3.2rem;
@@ -227,12 +237,49 @@ main {
     margin-top: 20rem;
   }
 }
+
+.skills {
+  margin: 0 5rem;
+  padding: 5rem 0;
+}
+.heading-container {
+  text-align: center;
+  margin-bottom: 2.3rem;
+  position: relative;
+}
+.underline-2 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 2px;
+  width: 50%;
+  background-color: var(--darkBlue);
+}
 .skills-carousel {
   position: relative;
+}
+.carousel-buttons {
+  position: absolute;
+  bottom: -15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.carousel-buttons > button {
+  border: none;
+  background: none;
+}
+.carousel-buttons > button:first-child {
+  margin-right: 3rem;
+}
+.skillname {
+  padding: 0.6rem;
+  font-size: 1.6rem;
+  text-align: center;
 }
 .slide > img {
   width: 200px;
   height: 200px;
+  border-radius: 1rem;
 }
 
 .carousel-slides {
